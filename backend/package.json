@@ -1,0 +1,18 @@
+{
+  "name": "giu-app",
+  "version": "1.0.0",
+  "description": "> How to use this template (Course Project brief, section 5): > 1. Rename this file to `README.md` and put it in the root of your repository, >    next to `backend/` and `frontend/`. > 2. Replace everything in [square brackets], brackets included. > 3. Delete every line that starts with `>`, like this one. > 4. Keep the headings and their numbers. Do not rename, reorder or delete sections. > 5. Push to `main` by **Thursday 12 November 2026, 23:59** (Submission 1).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "mongoose": "^9.12.1"
+  }
+}
