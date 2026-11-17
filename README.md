@@ -1,4 +1,4 @@
-# [Project name]
+# GIU App
 
 > How to use this template (Course Project brief, section 5):
 > 1. Rename this file to `README.md` and put it in the root of your repository,
