@@ -8,11 +8,18 @@ const app = express();
 
 app.use(express.json());
 
+app.get('/api/health', (req, res) => {
+  res.status(200).json({ status: 'ok' });
+});
 
-mongoose.connect(process.env.MONGODB_URI)
-  .then(() => console.log('Connected to MongoDB Atlas successfully!'))
-  .catch((err) => console.error('MongoDB connection error:', err));
 
-app.listen(3000, () => {
-  console.log(`Server is running on http://localhost:3000`);
+if (process.env.MONGODB_URI) {
+  mongoose.connect(process.env.MONGODB_URI)
+    .then(() => console.log('Connected to MongoDB Atlas successfully!'))
+    .catch((err) => console.error('MongoDB connection error:', err));
+}
+
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
 });
